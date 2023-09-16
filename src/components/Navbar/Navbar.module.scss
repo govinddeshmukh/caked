@@ -1,0 +1,218 @@
+@import "../../styles/Variable.scss";
+.navbar{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    // border: 1px solid black;
+    font-family: $font;
+    @include breakpoint (md) {
+        width: 100%;
+        height: 50px;
+        // border: 1px solid red;
+        padding: 0;
+    }
+    &__btn{
+        display: none;
+        @include breakpoint (md) {
+            display: block;
+            // border: 1px solid maroon;
+            width: 40%;
+            margin-left: 1rem;
+            button{
+                width: 2rem;
+                height: 2rem;
+                border: 0;
+                outline: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.2rem;
+                background: transparent;
+            }
+        }
+    }
+    &__left{
+        width: max-content;
+        height: 100%;
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        @include breakpoint (md){
+            width: 60%;
+        }
+
+        h1{
+            // border: 1px solid yellow;
+            font-size: 26px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            @include breakpoint (md) {
+                // border: 2px solid blue;
+                width: 100%;
+                font-size: 1.2rem;
+                
+            }
+            &:hover{
+                color: #999;
+                cursor: pointer;
+            }
+        }
+        nav{
+            display: flex;
+            margin-left: 1.8rem;
+            position: relative;
+            transition: .5s;
+            button{
+                display: none;
+                @include breakpoint (md){
+                    display: block;
+                }
+            }
+            @include breakpoint (md) {
+                position: absolute;
+                flex-direction: column;
+                width: 100%;
+                height: max-content;
+                background: #fff;
+                top: 50px;
+                left: -100%;
+                // left: 0;
+                margin: 0;
+                z-index: 10;
+                // border: 1px solid greenyellow;
+            }
+            li{
+                list-style: none;
+                margin-left: 1rem;
+                font-weight: 900;
+                // border: 1px solid red;
+                // height: 6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                @include breakpoint (md) {
+                    margin: 0;
+                    padding: .5rem 0;
+                }
+                
+                &:hover{
+                    color: #444;
+                }
+               
+            }
+               
+        }
+        .active{
+            left: 0;
+        }
+    
+        
+    }
+    &__right{
+        @include breakpoint (md) {
+            display: none;
+        }
+        ul{
+            display: flex;
+            &:hover{
+                li{
+                    color: rgba(202, 200, 200, 0.466);
+                    cursor: pointer;
+                    transition: .2s;
+                }
+            }
+            li{
+                list-style: none;
+                color: #99999983;
+                font-size: 1.4rem;
+                margin: 0 .1rem;
+                transition: .2s;
+                &:hover{
+                    color: #999;
+                }
+            }
+        }
+    }
+}
+
+.outer{
+    text-decoration: none;
+    color: #999;
+    font-family: $font;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: relative;
+    width: max-content;
+    @include breakpoint (md) {
+        // border: 1px solid red;
+        width: 100%;
+        position: static;
+    }
+    
+    
+    &__inner{
+        display: none; // Initially hide the inner div
+        position: absolute;
+        top: 15px; // Position it below the outer div
+        left: -20px;
+        background-color: white; // Customize background color
+        // border: 1px solid red; // Customize border
+        // padding: 10px; // Customize padding
+        z-index: 1; // Ensure it appears above other content
+        // padding-right: 1rem;
+        padding-top: 1rem;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        transition: .5s;
+        button{
+            display: none;
+            @include breakpoint (md){
+                display: block;
+            }
+        }
+       @include breakpoint (md) {
+        // display: none;
+        width: 100%;
+        left: 0;
+        // left: -100%;
+        position: static;
+        z-index: 0;
+        padding: 2rem 0;
+        // border: 1px solid blue;
+       }
+        .outer:hover & {
+            display: block;
+            @include breakpoint (md) {
+                position: absolute;
+                top: 0;
+                height: max-content;
+               }
+          }
+        li{
+            width: max-content;
+            padding: .3rem;
+            padding-right: .5rem;
+            color: #999;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                padding: 2rem 0;
+                // border: 1px solid red;
+            }
+            // height: 2rem;
+            
+        }
+    }
+    .show{
+        left: 0;
+    }
+}
+
+
+

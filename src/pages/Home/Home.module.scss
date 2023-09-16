@@ -1,0 +1,444 @@
+@import "../../styles//Variable.scss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@font-face {
+    font-family: 'LTC Bodoni 175';
+    src: url('../../styles/LTC\ Bodoni\ 175\ W01\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.home{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    // padding: 0 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font;
+    border-bottom:1px solid #999999bb;
+    margin-bottom: 2rem;
+    @include breakpoint (md) {
+        width: 100%;
+        height: max-content;
+        padding: 0 .5rem;
+        margin-top: 2rem;
+    }
+    
+    &__first{
+        width: 100%;
+        height: 90vh;
+        background: linear-gradient(rgba(10, 10, 10, 0.26), rgba(3, 3, 3, 0.253)), url(../../assets2/asset0.jpeg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        @include breakpoint (md) {
+            width: 100%;
+            height: 70vh;
+            
+        }
+        h1{
+            font-size: 6rem;
+            font-weight: 300;
+            @include breakpoint (md) {
+                font-size: 3rem;
+            }
+        }
+        p{
+            // border: 1px solid red;
+            width: max-content;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            @include breakpoint (md) {
+                font-size: 1rem;
+                padding: 0 1rem;
+                width: 100%;
+                line-height: normal;
+                margin-top: 1rem;
+            }
+        }
+    }
+    &__second{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+        padding-bottom: 0;
+        // align-items: flex-start;
+        flex-direction: column;
+        color: #444;
+        // border: 1px solid red;
+        @include breakpoint (md) {
+            width: 100%;
+            height: max-content;
+            padding: 0;
+            margin-top: 2rem;
+        }
+        p{
+            width: 100%;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: 0;
+            }
+        }
+        p:nth-child(2){
+            margin-top: 3rem;
+        }
+        &__mid{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            @include breakpoint (md) {
+                width: 100%;
+                height: max-content;
+                flex-direction: column;
+                padding: 0;
+            }
+            
+            &__left{
+                width: 48.5%;
+                height: 32rem;
+                background: linear-gradient(rgba(10, 10, 10, 0.26), rgba(3, 3, 3, 0.253)), url(../../assets2/asset1.jpeg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
+                flex-direction: column;
+                color: #fff;
+                line-height: 1rem;
+                cursor: pointer;
+                @include breakpoint (md) {
+                    width: 100%;
+                    margin-top: 2rem;
+                }
+                h1{
+                    font-weight: 300;
+                    font-size: 4.5rem;
+                    @include breakpoint (md) {
+                        font-size: 2rem;
+                    }
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    letter-spacing: 3px;
+                    line-height: 2rem;
+                    @include breakpoint (md) {
+                        padding: .5rem;
+                        // border: 1px solid maroon;
+                    }
+                }
+                
+                
+            }
+            &__right{
+                width: 48.5%;
+                height: 32rem;
+                background: linear-gradient(rgba(48, 47, 47, 0.171), rgba(46, 46, 46, 0.116)), url(../../assets2/asset2.jpeg);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-position: center;
+                background-size: cover;
+                flex-direction: column;
+                color: #fff;
+                line-height: 1rem; 
+                cursor: pointer;
+                @include breakpoint (md) {
+                    width: 100%;
+                    margin-top: 2rem;
+                }
+                h1{
+                    font-weight: 300;
+                    font-size: 4.5rem;
+                    @include breakpoint (md) {
+                        font-size: 2rem;
+                    }
+                }
+                p{
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    letter-spacing: 3px;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+    &__line{
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        @include breakpoint (md) {
+            width: 100%;
+            padding: 0;
+        }
+
+        hr{
+            width: 95%;
+           height: 1px;
+           @include breakpoint (md) {
+            width: 95%;
+           }
+        }
+
+    }
+    &__third{
+        width: 100%;
+        height: max-content;
+        padding: 1rem 4rem;
+        // margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // border: 1px solid blue;
+        @include breakpoint (md) {
+            width: 100%;
+            height: max-content;
+            flex-direction: column;
+            padding: 0;
+
+        }
+
+        &__left{
+            width: 23rem;
+            height: 30rem;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: .5rem;
+            }
+            
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: scale-down;
+                @include breakpoint (md) {
+                    width: 100%;
+                }
+            }
+        }
+        &__center{
+            width: 23rem;
+            height: 30rem;
+            text-align: left;
+            padding: 1.5rem;
+            padding-top: 4rem;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: .5rem;
+            }
+            h1{
+                font-family: ltc-bodoni-175, serif;
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            p{
+                text-align: left;
+                margin: 1rem 0;
+                line-height: 1.5rem;
+                color: #444;
+                @include breakpoint (md) {
+                }
+                
+            }
+        }
+        &__right{
+            width: 23rem;
+            height: 30rem;
+            cursor: pointer;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: .5rem;
+                height: max-content;
+            }
+            img{
+                width: 100%;
+                height: 10rem;
+                object-fit: cover;
+                @include breakpoint (md) {
+                    width: 100%;
+                    
+                }
+            }
+            h3{
+                color: #999999b7;
+                font-weight: 300;
+                width: 100%;
+                text-align: start;
+                margin: 1.5rem 0;
+                
+            }
+            p{
+                color: #444;
+                font-weight: 300;
+                width: 100%;
+                text-align: start;
+                font-size: .9rem;
+                @include breakpoint (md) {
+                    width: 100%;
+                }
+
+            }
+        }
+    }
+    &__fourth{
+        width: 100%;
+        height: max-content;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        @include breakpoint (md) {
+            width: 100%;
+            padding: 0;
+        }
+        &__top{
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: start;
+            line-height: 4rem;
+            padding:0 1rem;
+            font-weight: 600;
+            @include breakpoint (md) {
+                width: 100%;
+                line-height: 1rem;
+                height: max-content;
+                justify-content: center;
+                align-items: center;
+                padding: 1rem;
+            }
+            i{
+                font-family: ltc-bodoni-175;
+                font-size: 1.1rem;
+                color: #444;
+                font-weight: 300;
+                @include breakpoint (md) {
+                    font-size: 1rem;
+                }
+            }
+        }
+        &__mid{
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding:0 1.5rem;
+            color: #444;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: 1rem;
+                height: max-content;
+                font-size: .9rem;
+
+            }
+        }
+        &__foot{
+            width: 100%;
+            height: 3rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: #444;
+            @include breakpoint (md){
+                width: 100%;
+                height: max-content;
+                padding: 1rem;
+                font-size: .9rem;
+            }
+        } 
+
+    }
+    &__fifth{
+        width: 100%;
+        height: max-content;
+        padding:2rem 4rem;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include breakpoint (md){
+            width: 100%;
+            flex-wrap: wrap;
+            padding:2rem 1rem ;
+        }
+        img{
+            width: 8rem;
+            height: 8rem;
+            object-fit: cover;
+            @include breakpoint (md){
+                margin: 1rem 0;
+            }
+        
+        }
+      
+        &__outer{
+            width: 10rem;
+            height: 10rem;
+            border-radius: 50%;
+            // border: 1px solid purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #aa9fb7;
+            &__inner{
+                width: 9.7rem;
+                height: 9.7rem;
+                border-radius: 50%;
+                border: 1px dashed #fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                &__top{
+                    width: 8rem;
+                    height: 3rem;
+                    border-bottom: 1px solid #fff;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: center;
+                    font-family: ltc-bodoni-175, serif;
+                    color: #fff;
+                }
+                &__foot{
+                    width: 8rem;
+                    height: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    color: #fff;
+                    padding-top: .5rem;
+                    p{
+                        font-size: .7rem;
+                        font-weight: 300;
+                        color: #fff;
+                        letter-spacing: 2px;
+                    }
+                    i{
+                        font-family: 'Dancing Script', cursive;
+                        font-size: 1.4rem;
+                        font-weight: 600;
+                    }
+
+                }
+            }
+        }
+    }
+}

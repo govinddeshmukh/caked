@@ -1,0 +1,37 @@
+@font-face{
+    font-family: 'proxima-nova';
+    // src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Alt\ Bold.otf');
+    src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Alt\ Light.otf') format(truetype);
+    // src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Alt\ Thin.otf');
+    // src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Black.otf');
+    // src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Bold.otf');
+    // src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Extrabold.otf');
+    // src: url('./Proxima-Nova-Font/proxima_ssv/Proxima\ Nova\ Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+// font
+$font:'proxima-nova';
+
+// color
+$imgtext:#fff;
+$text:#444;
+
+@mixin breakpoint($point) {
+    @if $point ==md {
+        //480px
+
+        @media (max-width:480px) {
+
+            @content;
+        }
+    }
+    @if $point ==lg {
+        //768px
+
+        @media (max-width:768px) {
+            @content;
+        }
+    }
+}

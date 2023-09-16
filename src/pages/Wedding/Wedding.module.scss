@@ -1,0 +1,339 @@
+@import "../../styles/Variable.scss";
+
+.wedding{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    font-family: $font;
+    border-bottom:1px solid #999999bb;
+    margin-bottom: 2rem;
+    @include breakpoint (md) {
+        width: 100%;
+        height: max-content;
+        padding: 0 .5rem;
+        margin-top: 2rem;
+    }
+    &__first{
+        width: 100%;
+        height: 90vh;
+        background: linear-gradient(rgba(10, 10, 10, 0.26), rgba(3, 3, 3, 0.253)), url(../../assets2/asset0.jpeg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #fff;
+        @include breakpoint (md) {
+            width: 100%;
+            height: 70vh;
+            
+        }
+        h1{
+            font-size: 6rem;
+            font-weight: 300;
+            @include breakpoint (md) {
+                font-size: 3rem;
+            }
+        }
+        p{
+            // border: 1px solid red;
+            width: max-content;
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            @include breakpoint (md) {
+                font-size: 1rem;
+                padding: 0 1rem;
+                width: 100%;
+                line-height: normal;
+                margin-top: 1rem;
+            }
+        }
+    }
+    &__second{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem;
+        padding-bottom: 0;
+        // align-items: flex-start;
+        flex-direction: column;
+        color: #444;
+        // border: 1px solid red;
+        @include breakpoint (md) {
+            width: 100%;
+            height: max-content;
+            padding: 0;
+            margin-top: 2rem;
+        }
+        p{
+            width: 100%;
+            font-size: 1.5rem;
+            line-height: 2.2rem;
+            @include breakpoint (md) {
+                width: 100%;
+                padding: 0;
+                font-size: 1.2rem;
+                line-height: 2rem;
+                padding: 1rem;
+            }
+        }
+        i{
+            margin-top: 3rem;
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.726);
+            font-weight: 900;
+
+        }
+    }
+    &__line{
+        width: 100%;
+        height: 2rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        @include breakpoint (md) {
+            width: 100%;
+            padding: 0;
+        }
+
+        hr{
+            width: 100%;
+           height: 1px;
+           @include breakpoint (md) {
+            width: 95%;
+           }
+        }
+
+    }
+    &__third{
+        width: 100%;
+        height: max-content;
+        // border: 1px solid red;
+        @include breakpoint (md) {
+            width: 100%;
+            padding: 1rem;
+        }
+        p{
+            color: #444;
+            margin: 2rem 0;
+        }
+        button{
+            padding: .8rem 2.2rem;
+            text-transform: uppercase;
+            outline: none;
+            border: 2px solid black;
+            cursor: pointer;
+            border-radius: .15rem;
+            background: transparent;
+            letter-spacing: .08rem;
+            font-weight: 300;
+            color: #000;
+            &:hover{
+                background: black;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+        padding-bottom: 3rem;
+    }
+    &__fourth{
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        @include breakpoint (md) {
+            width: 100%;
+        }
+        // padding: 2rem;
+        &__content{
+            padding: 1rem 2rem;
+            @include breakpoint (md) {
+                padding: 1rem;
+            }
+            p{
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.726);
+                letter-spacing: 1px;
+                font-size: .9rem;
+                // border: 1px solid blue;
+                padding-bottom: 1rem;
+            }
+            h1{
+                font-weight: 100;
+                color: #444;
+                font-size: 24px;
+                font-style: normal;
+                letter-spacing: .2px;
+                line-height: 1.5rem;
+                margin-top: 1rem;
+            }
+        }
+        &__img{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: max-content;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5rem;
+            @include breakpoint (md) {
+                width: 100%;
+            }
+            img{
+                width: 18rem;
+                height: 18rem;
+                object-fit: cover;
+                margin: .5rem;
+                @include breakpoint (md) {
+                    width: 10rem;
+                    height: 12rem;
+                }
+            }
+        }
+    }
+    &__fifth{
+        width: 100%;
+        height: max-content;
+        margin: 0;
+        @include breakpoint (md) {
+            width: 100%;
+        }
+        // padding: 2rem;
+        &__content{
+            padding: 1rem 2rem;
+            @include breakpoint (md) {
+                padding: 1rem;
+            }
+            h1{
+                font-weight: 100;
+                color: #444;
+                font-size: 24px;
+                font-style: normal;
+                letter-spacing: .2px;
+                line-height: 1.5rem;
+                margin-top: 1rem;
+            }
+        }
+        &__img{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            height: max-content;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5rem;
+            @include breakpoint (md) {
+                width: 100%;
+            }
+            img{
+                width: 18rem;
+                height: 18rem;
+                object-fit: cover;
+                margin: .5rem;
+                @include breakpoint (md) {
+                    width: 10rem;
+                    height: 12rem;
+                }
+            }
+        }
+    }
+    &__sixth{
+        width: 100%;
+        height: max-content;
+        // border: 1px solid red;
+        line-height: 3rem;
+        @include breakpoint (md) {
+            width: 100%;
+        }
+        h1{
+            color: #999;
+            font-weight: 100;
+            font-style: normal;
+        }
+        p{
+            color: #444;
+            font-size: 1.2rem;
+        }
+
+        &__testimonial{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: start;
+            padding:0 1rem;
+            font-weight: 600;
+            flex-direction: column;
+            @include breakpoint (md) {
+                width: 100%;
+                // border: 1px solid red;
+            }
+            i{
+                font-family: ltc-bodoni-175;
+                font-size: 1.1rem;
+                color: #444;
+                font-weight: 300;
+                width: 100%;
+                height: max-content;
+                line-height: 2rem;
+                @include breakpoint (md) {
+                    font-size: 1rem;
+                }
+            }
+            p{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                // border: 1px solid blue;
+                color: #999;
+                font-weight: 100;
+                font-size: 1rem;
+                padding: 0 1rem;
+                @include breakpoint (md) {
+                    width: 100%;
+                }
+            }
+        }
+        &__btn{
+            width: 100%;
+            height: max-content;
+            margin-bottom: 3rem;
+            // border: 1px solid red;
+            @include breakpoint (md){
+                width: 100%;
+                margin: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            button{
+                padding: .8rem 2.2rem;
+                text-transform: uppercase;
+                outline: none;
+                border: 2px solid black;
+                cursor: pointer;
+                border-radius: .15rem;
+                background: transparent;
+                letter-spacing: .08rem;
+                font-weight: 300;
+                color: #000;
+                &:hover{
+                    background: black;
+                    color: #fff;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
